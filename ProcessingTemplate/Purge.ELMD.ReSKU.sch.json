@@ -1,0 +1,45 @@
+{
+  "onHold": true,
+  "owner": "TDROBISZ",
+  "priority": "0",
+  "processingType": "TRIGGER",
+  "statisticMethod": "AVERAGE",
+  "statisticPeriod": "MONTH",
+  "tags": 
+  [
+    "1.DSCReturns",
+    "2.ReSKU",
+    "3.ReS.ELMDPurge"
+  ],
+  "triggerType": "SCHEDULE",
+  "customFieldValues": {
+  },
+  "items": 
+  [
+    {
+      "name": "Purge.ELMD.ReSKU.wst",
+      "processingTemplate": "Purge.ELMD.ReSKU.wst",
+      "processingType": "WORKFLOW",
+      "statisticMethod": "MOST_FREQUENT_VALUE",
+      "statisticPeriod": "MONTH",
+      "tags": 
+      [
+        "1.DSCReturns"
+      ],
+      "workflowType": "STANDARD"
+    }
+  ],
+  "timeTriggers": 
+  [
+    {
+      "calculateProcessingTimestampUsingLocalTime": true,
+      "calendarInterval": 1,
+      "calendarIntervalUnit": "MONTH",
+      "endTime": 86399999,
+      "repeatInterval": 3600000,
+      "startTime": 72000000,
+      "timeTriggerType": "CALENDAR_INTERVAL",
+      "timeZone": "America/New_York"
+    }
+  ]
+}
